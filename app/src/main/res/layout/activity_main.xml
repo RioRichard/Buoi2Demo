@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="-176dp"
+    tools:layout_editor_absoluteY="-1dp">
+
+    <Button
+        android:id="@+id/facebook"
+        android:layout_width="149dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="100dp"
+        android:drawableLeft="@drawable/ic_facebook"
+        android:text="Facebook"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/google"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editPersonName"
+        android:layout_width="341dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="31dp"
+        android:ems="10"
+        android:hint="Nhập email"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editPasword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/editPasword"
+        android:layout_width="341dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="33dp"
+
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Nhập mật khẩu"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/forgotPass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPersonName" />
+
+    <TextView
+        android:id="@+id/Register"
+        android:layout_width="139dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="180dp"
+        android:gravity="center"
+        android:text="Đăng ký"
+        android:textAllCaps="true"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="338dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:text="Đăng nhập"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/editPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/forgotPass"
+        android:layout_width="104dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="276dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="43dp"
+        android:text="Quên mật khẩu"
+        app:layout_constraintBottom_toTopOf="@+id/loginButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPasword" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="339dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="22dp"
+        android:text="Đăng nhập"
+        app:layout_constraintBottom_toTopOf="@+id/Register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgotPass" />
+
+    <Button
+        android:id="@+id/google"
+        android:layout_width="149dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="100dp"
+        android:drawableLeft="@drawable/ic_google"
+        android:text="Google"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/facebook" />
+
+</android.support.constraint.ConstraintLayout>
